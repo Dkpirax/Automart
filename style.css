@@ -1,0 +1,361 @@
+:root {
+  background-color: #fff;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+
+body {
+  background-color: #fff;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1d3e3c;
+  border-radius: 50px;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  z-index: 1;
+  padding: 1.7rem;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0px 4px 6px 0px rgba(7, 7, 7, 0.2);
+  background: #222427;
+  justify-content: space-between;
+}
+.navigation .navigation_links {
+  margin-right: 2rem;
+  gap: 2.5rem;
+}
+.navigation .navigation_links .Home {
+  color: #EA1A1A;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.navigation * {
+  display: flex;
+  gap: 0.7rem;
+}
+.navigation * > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.hero_section {
+  position: relative;
+  top: 2.5rem;
+  height: 60rem;
+}
+.hero_section .hero_para {
+  margin-left: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  top: -42rem;
+}
+.hero_section .hero_para .para {
+  width: 48rem;
+}
+.hero_section .hero_para .main_CTA {
+  display: flex;
+  overflow: hidden;
+  padding: 1rem 7rem;
+  border: 2px solid #FFF;
+  background: rgba(217, 217, 217, 0.01);
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero_section .hero_para .main_CTA .text {
+  color: #FFF;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 121.281%;
+}
+.hero_section .hero_para .main_CTA:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.hero_section .hero_para .main_CTA:hover .text {
+  color: black;
+}
+
+.aboutUs_section {
+  padding: 8rem;
+  display: flex;
+  gap: 5rem;
+}
+.aboutUs_section .section_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.aboutUs_section .section_1 .About {
+  color: #000;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 121.281%;
+}
+.aboutUs_section .section_1 .About .us {
+  color: #EA1A1A;
+}
+.aboutUs_section .section_1 .bullet {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.aboutUs_section .section_1 .bullet .bullet_head {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.aboutUs_section .section_1 .bullet .list {
+  display: grid;
+  gap: 1rem;
+  text-wrap: nowrap;
+}
+.aboutUs_section .line {
+  position: relative;
+  top: -10rem;
+  width: 0.125rem;
+  height: 55rem;
+  border-left: 2px solid rgba(0, 0, 0, 0.185);
+}
+.aboutUs_section .section_2 {
+  display: flex;
+  gap: 3.5rem;
+  flex-direction: column;
+}
+.aboutUs_section .section_2 .our_branches .branches_head {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.aboutUs_section .section_2 .our_branches .branches_head .located {
+  color: #EA1A1A;
+}
+.aboutUs_section .section_2 .our_branches .location_details {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1rem;
+}
+.aboutUs_section .section_2 .our_branches .location_details .location {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.aboutUs_section .section_2 .our_history .history_head {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.aboutUs_section .section_2 .our_history .history_head .history {
+  color: #EA1A1A;
+}
+.aboutUs_section .section_2 .our_history .history_para {
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+.aboutUs_section .section_2 .our_history .history_para .codered {
+  color: #EA1A1A;
+}
+
+.ourService .ourservice_br {
+  position: relative;
+  top: -10rem;
+  width: 100%;
+}
+.ourService .service_cards {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 0.5rem;
+  height: 35.5rem;
+}
+.ourService .service_cards .card .card_img {
+  width: 20rem;
+}
+.ourService .service_cards .card .card_wordings {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  top: -16rem;
+  padding: 25px;
+}
+.ourService .service_cards .card .card_wordings .card_head {
+  color: #FFF;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 121.281%;
+}
+.ourService .service_cards .card .card_wordings .card_para {
+  width: 16.1875rem;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.ourService .service_cards .card .card_wordings .card_btn {
+  height: 3.125rem;
+  overflow: hidden;
+  padding: 1rem 3.4375rem;
+  background: #EA1A1A;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-style: none;
+  cursor: pointer;
+}
+.ourService .service_cards .card .card_wordings .card_btn .btn_txt {
+  margin-right: 1.2rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.ourService .service_cards .card .card_wordings .card_btn:hover {
+  background-color: #7c0c0c;
+}
+
+.Our_rates {
+  display: inline-flex;
+  position: relative;
+  height: 56.5rem;
+  background: #222427;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 12rem;
+  width: 100%;
+}
+.Our_rates .ourrate_head {
+  color: #FFF;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 121.281%;
+  margin-bottom: 3rem;
+}
+.Our_rates .ourrate_para {
+  color: #FFF;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 4rem;
+  width: 60%;
+}
+.Our_rates .para_2 {
+  color: rgba(255, 255, 255, 0.4705882353);
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 30%;
+}
+.Our_rates .Contactus_btn {
+  display: flex;
+  width: 14rem;
+  height: 4rem;
+  padding: 1.8125rem 8.375rem;
+  background: #EA1A1A;
+  color: #FFF;
+  text-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  border-style: none;
+  text-decoration: none;
+}
+.Our_rates .Contactus_btn:hover {
+  background: #7c0c0c;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.rates_table {
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.rates_table .table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.25);
+}
+.rates_table tr, .rates_table td {
+  padding: 2rem;
+}
+.rates_table tr {
+  background-color: #2D2F32;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,173 @@
+:root {
+    background-color: #fff;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+  }
+  
+  body {
+    background-color: #fff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #1d3e3c;
+    border-radius: 50px;
+  }
+  
+  .navbar-scroll .nav-link,
+  .navbar-scroll .navbar-toggler-icon,
+  .navbar-scroll .navbar-brand {
+    color: #fff
+  }
+  
+  
+  /* Color of the links AFTER scroll */
+  .navbar-scrolled .nav-link,
+  .navbar-scrolled .navbar-toggler-icon,
+  .navbar-scrolled .navbar-brand {
+    color: #fff;
+  }
+  
+  
+  /* Color of the navbar AFTER scroll */
+  .navbar-scroll,
+  .navbar-scrolled {
+    background-color: #cbbcb1;
+  }
+  
+  .mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+  }
+  
+  .navbar-brand {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+  }
+  
+  
+  .navigation{
+      z-index: 1;
+      padding: 1.7rem;
+      display: flex;
+      width: 100%;
+      position: fixed;
+      box-shadow: 0px 4px 6px 0px rgba(7, 7, 7, 0.20);
+      background: #222427;
+      justify-content: space-between;
+  
+      .navigation_links{
+          margin-right: 2rem;
+          gap: 2.5rem;
+  
+          .Home{
+              color: #EA1A1A; 
+              text-decoration: underline;
+              font-weight: bold;
+          }
+      }
+  
+      * {
+          display: flex;
+          gap: 0.7rem;
+      }
+  
+      * > a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #FFF;
+      }
+  }
+
+  .des_img{
+   height: 100%;
+  }
+
+  .herosection{
+    position: relative;
+    top: 4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    gap: 1.5rem;
+  }
+
+  .input_head{
+    color: #000;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+    .booking{
+        color: #EA1A1A;
+    }
+  }
+
+  .input_type{
+    color: #000;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 121.281%;
+  }
+
+  .input_section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .6rem;
+  }
+
+  .Contactus_btn{
+    display: flex;
+    height: 3rem;
+    padding: 1.8125rem 8.375rem;
+    background: #EA1A1A;
+    color: #FFF;
+    text-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    width: 100%;
+    margin-top: 1rem;
+}
+.Contactus_btn:hover{
+    background: #7c0c0c;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.input{
+    width: 26rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    background: #EDEDED;
+    border: none;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
+
+.input:focus-visible{
+    outline-color: #EA1A1A;
+}
